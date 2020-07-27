@@ -14,8 +14,6 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.5",
-    "@angular/cdk": "~10.0.4",
-    "@angular/cli": "~10.0.4",
     "@angular/common": "~10.0.5",
     "@angular/compiler": "~10.0.5",
     "@angular/core": "~10.0.5",
@@ -56,6 +54,6 @@
   },
   "engines": {
     "node": "10.14.2",
-      "npm": "6.4.1"
+    "npm": "6.4.1"
   }
 }

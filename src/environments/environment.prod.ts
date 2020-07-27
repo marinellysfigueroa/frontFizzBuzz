@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  urlService:'https://mfigueroa.herokuapp.com/intraway/api/fizzbuzz/'
+  urlService:'https://mfigueroa-back.herokuapp.com/intraway/api/fizzbuzz/'
 };
