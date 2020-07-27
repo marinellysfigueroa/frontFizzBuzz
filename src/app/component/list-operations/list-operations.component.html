@@ -1,0 +1,33 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <p>Listado de operaciones</p>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Timestamp</th>
+          <th scope="col">Número mínimo</th>
+          <th scope="col">Número máximo</th>
+          <th scope="col">Code</th>
+          <th scope="col">Description</th>
+          <th scope="col">List</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let operation of operations ">
+          <th scope="row">{{operation.id}}</th>
+          <td>{{operation.timestamp}}</td>
+          <td>{{operation.min}}</td>
+          <td>{{operation.max}}</td>
+          <td>{{operation.code}}</td>
+          <td>{{operation.description}}</td>
+          <td>{{operation.list}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

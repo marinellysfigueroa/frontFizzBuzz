@@ -1,0 +1,67 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <p>Realizar Operación</p>
+    </div>
+    <div class="panel-body">
+        <form [formGroup]="operationsaveform" #saveoperation (ngSubmit)="saveOperation(saveOperation)" novalidate>
+            <div class="form-group">
+                <label for="min_number">Mínino:</label>
+                <input id="min_number" type="number" class="form-control" [formControl]="MinNumber"
+                    data-toggle="tooltip" data-placement="right"
+                    title="Introduzca el número mínimo del rango a consultar">
+                <div class="alert alert-danger" *ngIf="(MinNumber.touched) && (MinNumber.invalid)"
+                    style="margin-top: 5px;">
+                    <span *ngIf="MinNumber.errors.required">Número mínimo requerido</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="max_number">Máximo:</label>
+                <input id="min_number" type="number" class="form-control" [formControl]="MaxNumber"
+                    data-toggle="tooltip" data-placement="right"
+                    title="Introduzca el número máximo del rango a consultar">
+                <div class="alert alert-danger" *ngIf="(MaxNumber.touched) && (MaxNumber.invalid)"
+                    style="margin-top: 5px;">
+                    <span *ngIf="MaxNumber.errors.required">Número máximo requerido</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Consultar</button>
+        </form>
+    </div>
+    <div class="panel-footer">
+        <p>
+            <span *ngIf="respuesta">
+                <div style="color:#FF661A;"><strong>Respuesta:</strong></div>
+                <table>
+                    <tr>
+                        <td>"timestamp":</td>
+                        <td></td>
+                        <td> {{respuesta.timestamp}} </td>
+
+                    </tr>
+                    <tr>
+                        <td> "code":</td>
+                        <td></td>
+                        <td>"{{respuesta.code}}"</td>
+
+                    </tr>
+                    <tr>
+                        <td> "description":</td>
+                        <td></td>
+                        <td> "{{respuesta.description}}"</td>
+
+                    </tr>
+                    <tr>
+                        <td>"list":</td>
+                        <td></td>
+                        <td>"{{respuesta.list}}"</td>
+
+                    </tr>
+                </table>
+
+            </span>
+        </p>
+        <div class="alert alert-danger" *ngIf="!valid" style="margin-top: 5px;">
+            <span>{{error}}</span>
+        </div>
+    </div>
+</div>
