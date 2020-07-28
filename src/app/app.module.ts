@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule,} from '@angular/forms';
+import { TruncarTextPipe } from './pipe/truncar-text.pipe';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule,ReactiveFormsModule,} from '@angular/forms';
     AppComponent,
     ListOperationsComponent,
     OperationComponent,
-    HomeComponent
+    HomeComponent,
+    TruncarTextPipe
   ],
   imports: [
     BrowserModule,

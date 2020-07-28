@@ -1,33 +1,31 @@
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <p>Listado de operaciones</p>
-  </div>
-  <div class="panel-body">
-    <table class="table table-striped">
-      <thead>
-        <tr>
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+  <table class="table table-bordered table-striped mb-0">
+    <thead>
+      <tr>
           
-          <th scope="col">Timestamp</th>
-          <th scope="col">Número mínimo</th>
-          <th scope="col">Número máximo</th>
-          <th scope="col">Code</th>
-          <th scope="col">Description</th>
-          <th scope="col">List</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let operation of operations ">
+        <th scope="col">Timestamp</th>
+        <th scope="col">Número mínimo</th>
+        <th scope="col">Número máximo</th>
+        <th scope="col">Code</th>
+        <th scope="col">Description</th>
+        <th scope="col">List</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let operation of operations ">
          
-          <td>{{operation.timestamp}}</td>
-          <td>{{operation.min}}</td>
-          <td>{{operation.max}}</td>
-          <td>{{operation.id |number:'3.0'}}</td>
-          <td>{{operation.description}}</td>
-          <td>{{operation.list}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+        <td>{{operation.timestamp}}</td>
+        <td>{{operation.min}}</td>
+        <td>{{operation.max}}</td>
+        <td>{{operation.id |number:'3.0'}}</td>
+        <td>{{operation.description}}</td>
+        <td>{{operation.list | truncarText:[operation.list]}}</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
+
 
