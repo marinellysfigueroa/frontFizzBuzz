@@ -8,21 +8,26 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lite": "lite-server",
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~0.1000.4",
     "@angular/animations": "~10.0.5",
-    "@angular/common": "~10.0.5",
     "@angular/cli": "~10.0.4",
-    "@angular/compiler-cli": "~10.0.5",
+    "@angular/common": "~10.0.5",
     "@angular/compiler": "~10.0.5",
+    "@angular/compiler-cli": "~10.0.5",
     "@angular/core": "~10.0.5",
     "@angular/forms": "~10.0.5",
     "@angular/platform-browser": "~10.0.5",
     "@angular/platform-browser-dynamic": "~10.0.5",
     "@angular/router": "~10.0.5",
+    "@types/node": "^12.11.1",
+    "@types/jquery": "^3.3.34",
+    "@types/datatables.net": "^1.10.18",
+    "@types/bootstrap": "^4.5.0",
     "bootstrap": "^3.4.1",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
@@ -55,8 +60,8 @@
     "typescript": "~3.9.5"
   },
   "engines": {
-    "node": "10.14.2",
-    "npm": "6.4.1"
+    "node": "12.18.2",
+    "npm": "6.14.5"
   },
   "description": "Es repositorio contiene un proyecto Angular, que permite invocar el endpoint de una API Java desarrollada con los parámetros que corresponda y muestre el resultado de cada petición.",
   "main": "karma.conf.js",
