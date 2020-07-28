@@ -55,5 +55,17 @@
   "engines": {
     "node": "10.14.2",
     "npm": "6.4.1"
-  }
+  },
+  "description": "Es repositorio contiene un proyecto Angular, que permite invocar el endpoint de una API Java desarrollada con los parámetros que corresponda y muestre el resultado de cada petición.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinellysfigueroa/frontFizzBuzz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marinellysfigueroa/frontFizzBuzz/issues"
+  },
+  "homepage": "https://github.com/marinellysfigueroa/frontFizzBuzz#readme"
 }
