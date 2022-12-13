@@ -29,7 +29,7 @@
     "@types/datatables.net": "^1.10.18",
     "@types/bootstrap": "^4.5.0",
     "bootstrap": "^3.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.4.1",
     "path": "^0.12.7",
     "rxjs": "~6.5.5",
